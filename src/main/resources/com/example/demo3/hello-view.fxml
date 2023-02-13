@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo3.HelloController" style="-fx-background-color: #ffd213">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText" alignment="CENTER" style="-fx-border-color: #d43f3a; -fx-background-color: #d9534f; -fx-text-fill: white" />
+    <HBox alignment="CENTER">
+        <Text text="Lloc: " styleClass="code"/>
+        <TextField fx:id="lloc"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Text text="Usuari: " styleClass="code" />
+        <TextField fx:id="usuari" />
+    </HBox>
+    <HBox alignment="CENTER">
+        <Text text="Contrasenya: " styleClass="code"/>
+        <PasswordField fx:id="contrasenya"/>
+    </HBox>
+    <HBox alignment="CENTER" style="-fx-spacing: 10px">
+    <Button id="1" text="Registrar compte" onAction="#botoRegistre" styleClass="btn-danger"/>
+    <Button id="2" text="Buscar compte" onAction="#botoAcces" styleClass="btn-danger"/>
+    </HBox>
+    <ImageView fitWidth="400" preserveRatio="true" fx:id="logo" >
+        <image>
+            <Image url="https://es.mobiletransaction.org/wp-content/uploads/sites/8/2019/09/cuentas-online-mejores-1.jpg" />
+        </image>
+    </ImageView>
+</VBox>
